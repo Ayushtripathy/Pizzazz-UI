@@ -53,11 +53,19 @@
   align-items: center;
   list-style: none;
   color: white;
+  cursor: pointer;
 }
 
 .listItem {
   margin: 20px;
   font-weight: 500;
+}
+
+.listItem:hover {
+  /* color: yellow; */
+  background-color: rgb(202, 202, 49);
+  padding: 4px;
+  border-radius: 8px;
 }
 
 .cart {
@@ -78,6 +86,29 @@
   justify-content: center;
   font-weight: bold;
   color: #d1411e;
+}
+
+.glow {
+  font-size: 40px;
+  padding: 8px;
+  color: #ffff00;
+  text-align: center;
+  font-family: "comic-sans", sans-serif;
+  font-weight: bold;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffa500,
+      0 0 40px #ffa500, 0 0 50px #ffa500, 0 0 60px #ffa500, 0 0 70px #ffa500;
+  }
+  to {
+    text-shadow: 0 0 20px #ffff00, 0 0 30px #ff0000, 0 0 40px #ff0000,
+      0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+  }
 }
 
 @media screen and (max-width: 480px) {
